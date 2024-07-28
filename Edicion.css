@@ -1,0 +1,194 @@
+body {
+    font-family: 'Times New Roman', Times, serif; /* Cambia la fuente del body a ATHENE */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Color de fondo del body */
+    color: #333333; /* Color de texto principal */
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(./img/fondoHeader.avif);
+    background-size: cover; /* Ajusta la imagen para cubrir todo el header */
+    background-position: center; /* Centra la imagen */
+    color: #ffffff; /* Color de texto del header */
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-right: 15px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Ajuste para centrar el contenido verticalmente */
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Ajusta la altura del banner según sea necesario */
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1; /* Asegura que el texto esté encima de la imagen */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.product-section {
+    width: 100%; /* Asegura que cada sección de producto ocupe todo el ancho disponible */
+    max-width: 800px; /* Ancho máximo para las secciones de producto */
+    margin: 0 auto; /* Centra las secciones horizontalmente */
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; /* Color de fondo de las secciones de productos */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product-section:hover {
+    transform: translateY(-10px);
+}
+
+.product-image {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.product-info {
+    width: 50%;
+}
+
+.product-info h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333333; /* Color de texto principal */
+}
+
+.product-info p {
+    color: #666666; /* Color de texto secundario */
+    line-height: 1.6;
+}
+
+.order-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1b5e20; /* Color de fondo del botón de orden */
+    color: #ffffff; /* Color de texto del botón de orden */
+    border: none;
+    padding: 20px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1001;
+}
+
+.order-button:hover {
+    background-color: #8d6e63; /* Color de fondo del botón de orden al pasar el cursor */
+    transform: translateY(-5px);
+}
+
+.image-buttons {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-button {
+    width: 70px; /* Ajustar el tamaño de las imágenes según sea necesario */
+    height: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-button:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    background-color: #f4f4f4; /* Color de fondo del footer */
+    color: #333333; /* Color de texto del footer */
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .logoFooter {
+    width: 200px; /* Mantener el tamaño del logo */
+    height: auto;
+    margin-right: 15px;
+}
+
+footer p {
+    margin-top: 20px; /* Separación entre los textos del footer */
+    line-height: 2.6;
+}
